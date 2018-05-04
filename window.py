@@ -7,14 +7,14 @@ class Example(tk.Frame):
 
         tk.Frame.__init__(self, parent)
         label = tk.Label(self, padx=4, pady=4, text="Fields", font='Helvetica 16 bold')
-        label.grid(row=1, columnspan=2)
+        label.grid(row=0, column=0, columnspan=2)
 
         first_name_label = tk.Label(self, text="Child's first name:    ", anchor='w')
-        first_name_label.grid(sticky="W", row=2, column=1)
+        first_name_label.grid(sticky="W", row=1, column=0)
 
         first_name_field = tk.Entry(self)
         first_name_field.insert(END, "CHILD_FIRST_NAME")
-        first_name_field.grid(sticky="W", row=2, column=2)
+        first_name_field.grid(sticky="W", row=1, column=1)
 
         self.grid_rowconfigure(0, weight=1)
         self.grid_rowconfigure(2, weight=1)
