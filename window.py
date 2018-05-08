@@ -89,6 +89,30 @@ class Example(tk.Frame):
 		self.c2_pickup_field.insert(END, "C2_Pick-Up")
 		self.c2_pickup_field.grid(sticky="W", row=13, column=1)
 
+		self.c2_first_name = tk.Label(self, text="C3 First Name:    ", anchor='w')
+		self.c2_first_name.grid(sticky="W", row=14, column=0, pady=(6, 0))
+		self.c2_first_field = tk.Entry(self)
+		self.c2_first_field.insert(END, "C3_First_Name")
+		self.c2_first_field.grid(sticky="W", row=14, column=1, pady=(6, 0))
+
+		self.c2_last_name = tk.Label(self, text="C3 Last Name:    ", anchor='w')
+		self.c2_last_name.grid(sticky="W", row=15, column=0)
+		self.c2_last_field = tk.Entry(self)
+		self.c2_last_field.insert(END, "C3_Last_Name")
+		self.c2_last_field.grid(sticky="W", row=15, column=1)
+
+		self.c2_phone = tk.Label(self, text="C3 Phone #:    ", anchor='w')
+		self.c2_phone.grid(sticky="W", row=16, column=0)
+		self.c2_phone_field = tk.Entry(self)
+		self.c2_phone_field.insert(END, "C3_Phone_#")
+		self.c2_phone_field.grid(sticky="W", row=16, column=1)
+
+		self.c2_pickup = tk.Label(self, text="C3 Pickup #:    ", anchor='w')
+		self.c2_pickup.grid(sticky="W", row=17, column=0)
+		self.c2_pickup_field = tk.Entry(self)
+		self.c2_pickup_field.insert(END, "C3_Pick-Up")
+		self.c2_pickup_field.grid(sticky="W", row=17, column=1)
+
 		self.grid_rowconfigure(0, weight=1)
 		self.grid_rowconfigure(2, weight=1)
 		self.grid_columnconfigure(0, weight=1)
