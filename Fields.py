@@ -178,11 +178,6 @@ if __name__ == "__main__":
 	print(Fields(root).parent_last_field.get())
 
 	root2 = tk.Tk()
-	clockFrame = Frame(root2)
-	#clockFrame.pack(side=RIGHT)
-	#clockLabel = tk.Label(clockFrame, text="haha lol okay")
-	#clockLabel.grid(row=0, column=0, columnspan=2)
-	#clockLabel.pack()
 
 	master = Tk()
 
